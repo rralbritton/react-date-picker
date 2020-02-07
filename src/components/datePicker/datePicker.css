@@ -1,0 +1,127 @@
+tr {
+    padding: 0;
+    margin: 0;
+    height: 3rem;
+    border: 1px solid #ccccccd2;
+    line-height: 3rem;
+}
+
+td {
+    /*border: 1px solid #ccccccd2;*/
+}
+
+.calendar-container {
+    border: 0.2rem solid #474242;;
+    border-radius: 0.5rem;
+    position: relative;
+    margin: 5rem auto;
+    width: 20rem;
+}
+
+.calendar {
+    background-color: #fff;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar-header {
+    font-size: 1.6em;
+    background-color: #383535;
+    color: white;
+    font-weight: 400; 
+    text-transform: uppercase; 
+    border: 1px solid #383535;  
+}
+
+.calendar-header td {
+    border-spacing: 0;
+    padding-left: 5px;
+}
+
+.day,
+.empty-slot,
+.week-day {
+    text-align: center;
+    height: 40px;
+}
+
+.week-day {
+    font-size: 0.8em;
+}
+
+.day {
+    font-size: 0.8em;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.day:hover {
+    background-color: rgb(220, 242, 199);
+}
+
+.current-day {
+    background-color: #769b76;
+    border-radius: 2%;
+    color: white;
+}
+.selected-day {
+    background-color:yellow;
+    border-radius: 2%;
+    color: black;
+}
+
+.month-popup {
+    position: absolute;
+    padding: 5px;
+    background: #e8e8e8;
+    border: 1px solid #807878;
+    border-radius: 5px;
+    width: 92%;
+}
+
+.month-popup div {
+    display: inline list-item;
+    color:#e8e8e8;
+}
+
+.selectList {
+    text-decoration: none;
+    padding: 1rem;
+    color: #000000;
+}
+
+.selectList:hover{
+    background-color: #c4c4b5;
+    border-radius: 5px;
+}
+
+.nav-month {
+    top: 0.6em;
+    font-size: 0.6em;
+    right:3px;
+    background-color:  #383535;
+    color: #fff;
+
+}
+
+.editor-year {
+    max-width: 3.5rem;
+    border-radius: 5px;
+    padding: .2rem;
+}
+
+.label-month,
+.label-year {
+    font-size: 0.6em;
+}
+
+.label-month {
+    cursor: pointer;
+}
+
+.prev {
+    padding-right: 0.5rem;
+}
