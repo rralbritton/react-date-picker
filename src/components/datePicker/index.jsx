@@ -71,7 +71,7 @@ export default class DatePicker extends React.Component {
     }
 
     setYear = (year) => {
-        let dateContext = Object.assign({}, this.props.dateContext);
+        let dateContext = Object.assign({}, this.state.dateContext);
         dateContext = moment(dateContext).set("year", year);
         this.setState({
             dateContext: dateContext
@@ -104,11 +104,9 @@ export default class DatePicker extends React.Component {
         let daysInMonth = [];
         for (let d = 1; d <= this.daysInMonth(); d++) {
             //highlight the current day - color all other days white
-            debugger;
-            let className = (d == this.currentDay() ? "day current-day" : "day");
             let selectedClass = (d == this.state.selectedDay ? " selected-day " : "")
             daysInMonth.push(
-                <td key={d} className={className + selectedClass} >
+                <td key={d} className={"day " + selectedClass} >
                     <span onClick={(e) => { this.onDayClick(e, d) }}>{d}</span>
                 </td>
             );
